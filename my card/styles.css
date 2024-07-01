@@ -1,0 +1,78 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  cursor: url('cursores/Anime-cur.cur'), auto;
+}
+
+.video-background {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
+  filter: blur(3px);
+}
+
+.card-custom {
+  width: 25rem; 
+  height: 21rem;
+  background-color: rgba(63, 63, 63, 0.3); 
+  border: 2px solid #000000; 
+  border-radius: 20px; 
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  font-size: 19px;
+}
+
+
+.card-custom .card-body h5 {
+  color: #1d1d1d;
+  font-size: 30px;
+}
+
+.icon-links {
+  margin-top: 10px;
+}
+
+.icon-links .card-icon {
+  color: #d140fd; 
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.custom-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100px;
+  display: block;
+  margin: auto;
+}
+
+.animated-title {
+  animation: bounce 3s infinite; /* Adiciona a animação 'bounce' por 2 segundos, repetindo infinitamente */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-10); /* Começa e termina na posição inicial */
+  }
+  50% {
+    transform: translateY(-10px); /* Eleva o texto em 10 pixels no meio da animação */
+  }
+}
